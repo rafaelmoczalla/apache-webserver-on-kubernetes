@@ -29,6 +29,12 @@ Check if the Apache Webserver is running.
 kubectl get pods
 ```
 
+Forward the Apache Webserver to your local host & check if you can load the website.
+```bash
+kubectl port-forward svc/apache-service 8080:80
+curl http://localhost:8080
+```
+
 ### Delete Apache Webserver
 Get the deployment name.
 ```bash
