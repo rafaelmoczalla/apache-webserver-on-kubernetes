@@ -42,7 +42,7 @@ kubectl get deployments --all-namespaces
 ```
 Delete the apache-deployement.
 ```bash
-kubectl scale deployment <deployment_name> --replicas=0
+kubectl scale deployment apache-deployment --replicas=0
 ```
 
 Get the service name.
@@ -51,7 +51,7 @@ kubectl get services --all-namespaces
 ```
 Delete the apache-service.
 ```bash
-kubectl scale deployment <deployment_name> --replicas=0
+kubectl delete service apache-service
 ```
 
 ## License
